@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7fa2a296ee7ea984f98c1e9e84c76c0a
+guid: 9e29fdd265e05a6498454985b0fa384e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Claws_0
+      name: Rope_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 75
-        width: 52
-        height: 45
+        x: 943
+        y: 724
+        width: 57
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,134 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2d7a20eb9b537141a82f114dae045aa
-      internalID: 644758789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Claws_1
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 69
-        width: 52
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ef187e7e2123954e8430564f07fa810
-      internalID: -456396605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Claws_2
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 69
-        width: 50
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 048cbed4c2983974497a21ebe1dc8700
-      internalID: 2108578006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Claws_3
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 69
-        width: 50
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 734e0102ad41ddc4d8e86a3a17770207
-      internalID: 1564684385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hook
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2
-        width: 50
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 187281193ab9848479e0170a14195023
-      internalID: -892542324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Claws_5
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 2
-        width: 49
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb3c535a4fa303f4e8403c86f2003c5b
-      internalID: 374062769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Claws_6
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 2
-        width: 50
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47dc756196995d74b9c0ede905ae9f49
-      internalID: 227906266
+      spriteID: 804e17956cea1b64fa7dc5e28ca1b6ad
+      internalID: 661366125
       vertices: []
       indices: 
       edges: []
@@ -306,13 +180,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Claws_0: 644758789
-      Claws_1: -456396605
-      Claws_2: 2108578006
-      Claws_3: 1564684385
-      Claws_5: 374062769
-      Claws_6: 227906266
-      Hook: -892542324
+      Rope_0: 661366125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
