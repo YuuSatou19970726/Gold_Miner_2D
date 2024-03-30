@@ -123,4 +123,9 @@ public class HookMovement : MonoBehaviour
 
         ropeRenderer.RenderLine(transform.position, true);
     }
+
+    public void HookAttachedItem()
+    {
+        moveDown = false;
+    }
 }
