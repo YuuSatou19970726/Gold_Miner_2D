@@ -21,7 +21,12 @@ public class HookMovement : MonoBehaviour
     private bool moveDown;
 
     // FOR LINE RENDERER
-    // private RopeRenderer ropeRenderer;
+    private RopeRenderer ropeRenderer;
+
+    void Awake()
+    {
+        ropeRenderer = GetComponent<RopeRenderer>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -107,7 +112,8 @@ public class HookMovement : MonoBehaviour
         {
             canRotate = true;
 
-            // deactivate live renderer
+            // deactivate line renderer
+            ropeRenderer.RenderLine(temp, false);
 
             // reset move speed
             move_Speed = initial_Move_Speed;
@@ -115,6 +121,6 @@ public class HookMovement : MonoBehaviour
             // SoundManager.instance.RopeStretch(false);
         }
 
-        // ropeRenderer.RenderLine(temp, true);
+        ropeRenderer.RenderLine(transform.position, true);
     }
 }
