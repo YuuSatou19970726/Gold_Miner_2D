@@ -10,6 +10,6 @@ public class Item : MonoBehaviour
 
     void OnDisable()
     {
-        // GameManager.instance.DisplayScore(scoreValue);
+        GameplayManager.instance.DisplayScore(scoreValue);
     }
 }

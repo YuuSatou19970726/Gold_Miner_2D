@@ -11,9 +11,12 @@ public class Hook : MonoBehaviour
 
     private HookMovement hookMovement;
 
+    private PlayerAnimation playerAnim;
+
     void Awake()
     {
         hookMovement = GetComponentInParent<HookMovement>();
+        playerAnim = GetComponentInParent<PlayerAnimation>();
     }
 
     void OnTriggerEnter2D(Collider2D target)
@@ -32,18 +35,37 @@ public class Hook : MonoBehaviour
             hookMovement.HookAttachedItem();
 
             // animation player
+            playerAnim.PullingItemAnimation();
 
             if (target.tag == Tags.SMALL_GOLD || target.tag == Tags.MIDDLE_GOLD ||
             target.tag == Tags.LARGE_GOLD)
             {
-                // SoundManager.instance.HookGrab_Gold();
+                SoundManager.instance.HookGrab_Gold();
             }
             else if (target.tag == Tags.MIDDLE_STONE || target.tag == Tags.LARGE_STONE)
             {
-                // SoundManager.instance.HookGrab_Stone();
+                SoundManager.instance.HookGrab_Stone();
             }
 
-            // SoundManager.instance.PullSound(true);
+            SoundManager.instance.PullSound(true);
+        }
+
+        if (target.tag == Tags.DELIVER_ITEM)
+        {
+            if (itemAttached)
+            {
+                itemAttached = false;
+
+                Transform objChild = itemHolder.GetChild(0);
+
+
+                objChild.parent = null;
+                objChild.gameObject.SetActive(false);
+
+                playerAnim.IdleAnimation();
+
+                SoundManager.instance.PullSound(false);
+            }
         }
     }
 }
